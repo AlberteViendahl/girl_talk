@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <title>Girl talk</title>
     <style>
+
       * {
         margin: 0;
         box-sizing: border-box;
@@ -42,14 +43,15 @@
       }
 
       p {
-        font-size: 2rem;
-        width: 90vw;
+        font-size: 1.5rem;
+        width: 80vw;
         max-width: 800px;
         margin: 4rem 0;
         color: #1d1d1b;
+        line-height: 1.5em;
       }
       h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
         width: 90vw;
         max-width: 800px;
         margin: 4rem 0;
@@ -86,14 +88,57 @@
       }
 
       @media screen and (min-width: 768px) {
+        p{
+          font-size: 2rem;
+          width: 90vw;
+        }
+
+        h1{
+          font-size: 2rem;
+        }
       }
+
+      /* Stil for chat-boble */
+      .chat-bubble {
+  border-radius: 20px;
+  padding: 10px;
+  margin-bottom: 20px; /* Justeret margin */
+  max-width: 70%;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* Stil for meldingsteksten */
+.message {
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 7s steps(40, end) 2.5s forwards;
+    }
+
+/* Nøkkelrammeanimasjon for å simulere tekstinntasting */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+
+
     </style>
   </head>
   <header>
     <p id="headertext"><3 Chat med oss i dag fra 19:00 - 23:00</p>
   </header>
   <body>
-    <h1>overskrift animasjon her</h1>
+
+      <h1>Overskift</h1>
+  
     <main class="container">
       <div class="item item-a">
         <p>
@@ -104,7 +149,10 @@
           følelsesløshed og aggression. Hendes hjerte dunkede hurtigere, og en
           knugende følelse af forvirring og vrede greb fat i hende.
         </p>
-        <h1>En Venskabelig Tsunami, animasjon?</h1>
+        <div class="chat-bubble">
+          <h1 class="message">En Venskabelig Tsunami, animasjon?</h1>
+        </div>
+      
         <p>
           Det hele startede en almindelig tirsdag eftermiddag, da Sophie modtog
           en enkelt besked fra Julia: "Vi skal tale." Ordene flimrede på skærmen
